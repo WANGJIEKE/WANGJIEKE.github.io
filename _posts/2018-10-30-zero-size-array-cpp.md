@@ -2,7 +2,7 @@
 layout: post
 title:  "C++中new一个长度为0的数组"
 date:   2018-10-30 00:00:00 -0700
-categories: study-cs cpp
+tags: study-cs cpp
 ---
 
 最近看到老师的示例代码，其中有一个操作，就是`new`一个长度为`0`的数组，大概是下面这种样子。
