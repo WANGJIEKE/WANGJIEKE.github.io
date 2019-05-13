@@ -52,7 +52,11 @@ using template constructor
 原因正是我刚才所讲的，Lambda表达式本质上是一个匿名类，自然而然编译器会选用带有模版的构造函数。如果我们确实需要调用函数指针的那一个构造函数，我们就需要一些处理。
 {% highlight cpp %}
 using EmptyFunction = void(*)();
-Foo(EmptyFunction) [](){});  // 方法1
-Foo(EmptyFunction{[](){}});  // 方法2
+
+// 方法1
+Foo(EmptyFunction) [](){});
+
+// 方法2
+Foo(EmptyFunction{[](){}});
 {% endhighlight %}
 方法1是通过C风格转型；方法2是通过C++的直接列表初始化实现“转型”。
