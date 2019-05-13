@@ -2,7 +2,7 @@
 layout: post
 title:  "C++中Lambda表达式作为函数参数"
 date:   2018-10-09 00:00:00 -0700
-categories: cpp study-cs
+categories: study-cs cpp
 ---
 
 C++自C++11起开始Lambda表达式（Lambda Expression），我一般简称为匿名函数（虽然这个称呼不太对）。一个匿名函数由三部分组成，方括号内的是Capture，圆括号内的是Parameter，花括号内的是函数体。下面是一个简单的匿名函数。
