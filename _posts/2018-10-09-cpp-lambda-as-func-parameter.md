@@ -54,7 +54,7 @@ using template constructor
 using EmptyFunction = void(*)();
 
 // 方法1
-Foo(EmptyFunction) [](){});
+Foo((EmptyFunction) [](){});
 
 // 方法2
 Foo(EmptyFunction{[](){}});
