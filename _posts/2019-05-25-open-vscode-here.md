@@ -40,4 +40,12 @@ int main(int argc, char** argv) {
 }
 ```
 
+代码完成之后可以macOS自带的`clang`编译。
+
+```bash
+cc vscode.c -o vscode
+```
+
+最后将二进制文件所在的目录加入`PATH`，重启shell即可。
+
 代码也可以在[我的GitHub Gist](https://gist.github.com/WANGJIEKE/37b7f1d572bfeaa4019e8e5ce258d228)上找到。
