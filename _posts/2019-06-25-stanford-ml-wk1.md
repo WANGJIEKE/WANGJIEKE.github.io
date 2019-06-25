@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Stanford Machine Learning Notes (Week 1)"
+title:  "斯坦福机器学习课程笔记（Week 1）"
 date:   2019-06-25 03:45:00 -0700
 tags:   study-cs machien-learning
 ---
