@@ -5,6 +5,20 @@ date:   2019-05-25 23:46:00 -0700
 tags: study-cs c
 ---
 
+Visual Studio Code在macOS中是可以通过命令行打开的，具体操作可以在[这篇官方文档](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)中找到，下面是节选。
+
+> You can also run VS Code from the terminal by typing 'code' after adding it to the path:
+>
+> - Launch VS Code.
+> - Open the **Command Palette** (⇧⌘P) and type 'shell command' to find the **Shell Command: Install 'code' command in PATH** command.
+macOS shell commands
+>   !['shell command'](/assets/2019-05-25-open-vscode-here/shell-command.png)
+> - Restart the terminal for the new `$PATH` value to take effect. You'll be able to type 'code .' in any folder to start editing files in that folder.
+
+以下为毫无卵用的原文章。
+
+---
+
 开始使用Visual Studio Code之后，经常需要在shell中用Visual Studio Code打开某个目录。但是，输入`open . -a "Visual Studio Code"`过于繁琐了，而shell脚本我还没怎么写过，所以我打算用C语言来完成这个脚本。
 
 ```c
