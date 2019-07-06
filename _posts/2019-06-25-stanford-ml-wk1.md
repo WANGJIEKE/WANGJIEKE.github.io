@@ -7,6 +7,11 @@ tags:   study-cs machien-learning
 
 本笔记基于Coursera上的[Stanford机器学习公开课](https://www.coursera.org/learn/machine-learning/)，这个免费的课程是Stanford CS 229的简化版。
 
+## 本系列的其它文章
+
+- 斯坦福机器学习课程笔记（Week 1）
+- [斯坦福机器学习课程笔记（Week 2）]({% post_url 2019-07-05-stanford-ml-wk2 %})
+
 ## 机器学习的定义
 
 Tom Mitchell对机器学习的定义
@@ -138,11 +143,7 @@ Tom Mitchell对机器学习的定义
 
 *我们使用$$:=$$符号来表示“赋值”操作（跟编程语言中使用`=`进行赋值操作不同）*
 
-$$\text{repeat until convergence \{}$$<br>
-
-$$\hspace{1ex}\theta_i:=\theta_i - \alpha{\partial\over{\partial\theta_i}}{J(\theta_0, \theta_1, {\cdots}, \theta_n)}\hspace{4ex} \text{(simultaneously for all } i \text{)}$$
-
-$$\}$$<br>
+$$ \theta_i:=\theta_i - \alpha{\partial\over{\partial\theta_i}}{J(\theta_0, \theta_1, \cdots, \theta_n)}\hspace{4ex} \text{(looping simultaneously for all } i \text{ until converge)} $$
 
 - $$\alpha$$是learning rate（相当于一步迈多大）
 
