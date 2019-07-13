@@ -252,7 +252,8 @@ options = optimset('GradObj', 'on', 'MaxIter', 100);
 % 原视频中是'100'，但是在MATHLAB R2019a中提示应该使用数字100而不是字符串'100'
 
 initialTheta = zeros(2, 1);
-[optTheta, functionVal, exitFlag] = fminunc(@costFunction, initialTheta, options);
+[optTheta, functionVal, exitFlag] = ...
+    fminunc(@costFunction, initialTheta, options);
 ```
 
 其中`optTheta`代表求出的最优$$\theta$$；`functionVal`代表代入最优$$\theta$$时代价函数$$J(\theta)$$的值；`exitFlag`代表`fminunc`函数的退出状态，若为`1`代表函数收敛。此外，`fminunc`需要确保$$\theta\in\mathbb{R}^d$$且$$d\ge2$$。如果$$\theta$$仅为一个实数的话可能无法使用`fminunc`函数。
@@ -263,7 +264,13 @@ initialTheta = zeros(2, 1);
 
 ![1562974257512](/assets/2019-07-13-stanford-ml-wk3/1562974257512.png)
 
-其中，$$h_\theta^{(i)}(x)$$代表针对第$$i$$个class的预测函数，即$$h_\theta^{(i)}(x)=P(y=i|x;\theta)$$。我们就可以通过logistic回归得到每个$$h_\theta^{(i)}(x)$$的值。最后，我们查看，对于一个数据，哪个class的预测函数返回的概率最大，我们就认为这个数据最有可能属于这个类型。
+其中，$$h_\theta^{(i)}(x)$$代表针对第$$i$$个class的预测函数，即
+
+$$
+h_\theta^{(i)}(x)=P(y=i|x;\theta)
+$$
+
+我们就可以通过logistic回归得到每个$$h_\theta^{(i)}(x)$$的值。最后，我们查看，对于一个数据，哪个class的预测函数返回的概率最大，我们就认为这个数据最有可能属于这个类型。
 
 ## 过拟合问题（The Problem of Overfitting）
 
