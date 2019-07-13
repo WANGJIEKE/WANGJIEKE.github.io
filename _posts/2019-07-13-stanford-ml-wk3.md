@@ -171,7 +171,7 @@ $$
 
 $$
 \begin{eqnarray*}
-J(\theta)&=&\frac1m\sum_{i=1}^{m}\text{Cost}(h_\theta(x^{(i)}),y^{(i)}) \\ 
+J(\theta)&=&\frac1m\sum_{i=1}^{m}\text{Cost}(h_\theta(x^{(i)}),y^{(i)}) \\
 &=&-\frac1m[\sum_{i=1}^my^{(i)}\log h_\theta(x^{(i)})+(1-y)\log(1-h_\theta(x^{(i)}))]
 \end{eqnarray*}
 $$
@@ -378,4 +378,3 @@ $$
 
 （因为我这里没办法弄出吴教授那种代码和数学公式混排的，这里就直接上图了）
 ![1562995180342](/assets/2019-07-13-stanford-ml-wk3/1562995180342.png)
-
