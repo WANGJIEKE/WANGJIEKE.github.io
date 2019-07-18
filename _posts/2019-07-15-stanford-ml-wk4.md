@@ -5,6 +5,13 @@ date:   2019-07-15 22:14:00 -0700
 tags:   study-cs machien-learning
 ---
 
+## 本系列的其它文章
+
+- [斯坦福机器学习课程笔记（Week 1）]({% post_url 2019-06-25-stanford-ml-wk1 %})
+- [斯坦福机器学习课程笔记（Week 2）]({% post_url 2019-07-05-stanford-ml-wk2 %})
+- [斯坦福机器学习课程笔记（Week 3）]({% post_url 2019-07-13-stanford-ml-wk3 %})
+- **斯坦福机器学习课程笔记（Week 4）**
+
 ## 神经网络（Neural Network）
 
 ### 非线性分类问题

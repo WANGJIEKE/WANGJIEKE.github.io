@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 关于我 / About Me
+title: 关于我 / About Myself
 permalink: /about/
 ---
 
@@ -10,4 +10,4 @@ permalink: /about/
 
 本站所有文章如无特殊说明均为原创，未经许可不得转载。
 
-English version is under construction :)
+[**个人简历（英文） / Resume**](/assets/about/TongjieWang_Resume.pdf)

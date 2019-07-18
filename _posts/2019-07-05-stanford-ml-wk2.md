@@ -8,7 +8,9 @@ tags:   study-cs machien-learning
 ## 本系列的其它文章
 
 - [斯坦福机器学习课程笔记（Week 1）]({% post_url 2019-06-25-stanford-ml-wk1 %})
-- 斯坦福机器学习课程笔记（Week 2）
+- **斯坦福机器学习课程笔记（Week 2）**
+- [斯坦福机器学习课程笔记（Week 3）]({% post_url 2019-07-13-stanford-ml-wk3 %})
+- [斯坦福机器学习课程笔记（Week 4）]({% post_url 2019-07-15-stanford-ml-wk4 %})
 
 ## 多变量线性回归
 

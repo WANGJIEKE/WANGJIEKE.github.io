@@ -9,8 +9,10 @@ tags:   study-cs machien-learning
 
 ## 本系列的其它文章
 
-- 斯坦福机器学习课程笔记（Week 1）
+- **斯坦福机器学习课程笔记（Week 1）**
 - [斯坦福机器学习课程笔记（Week 2）]({% post_url 2019-07-05-stanford-ml-wk2 %})
+- [斯坦福机器学习课程笔记（Week 3）]({% post_url 2019-07-13-stanford-ml-wk3 %})
+- [斯坦福机器学习课程笔记（Week 4）]({% post_url 2019-07-15-stanford-ml-wk4 %})
 
 ## 机器学习的定义
 

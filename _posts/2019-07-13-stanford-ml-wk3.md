@@ -5,6 +5,13 @@ date:   2019-07-13 00:23:00 -0700
 tags:   study-cs machien-learning
 ---
 
+## 本系列的其它文章
+
+- [斯坦福机器学习课程笔记（Week 1）]({% post_url 2019-06-25-stanford-ml-wk1 %})
+- [斯坦福机器学习课程笔记（Week 2）]({% post_url 2019-07-05-stanford-ml-wk2 %})
+- **斯坦福机器学习课程笔记（Week 3）**
+- [斯坦福机器学习课程笔记（Week 4）]({% post_url 2019-07-15-stanford-ml-wk4 %})
+
 ## 双类别分类问题（Binary Classification）
 
 ### 简介
