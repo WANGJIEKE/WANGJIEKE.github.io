@@ -137,7 +137,7 @@ $$
 $$
 \begin{eqnarray*}
 
-\frac{\partial J(\Theta)}{\partial\Theta_{12}^{(3)}}&=&\frac{\partial J(\Theta)}{\partial a_1^{(4)}}\cdot\frac{\partial a_1^{(4)}}{\partial z_1^{(4)}}\cdot\frac{\partial z_1^{(4)}}{\partial\Theta_{12}^{(3)}} \\ 
+\frac{\partial J(\Theta)}{\partial\Theta_{12}^{(3)}}&=&\frac{\partial J(\Theta)}{\partial a_1^{(4)}}\cdot\frac{\partial a_1^{(4)}}{\partial z_1^{(4)}}\cdot\frac{\partial z_1^{(4)}}{\partial\Theta_{12}^{(3)}} \\
 &=&\delta_1^{(4)}\cdot\frac{\partial z_1^{(4)}}{\partial\Theta_{12}^{(3)}} \\
 
 \end{eqnarray*}
