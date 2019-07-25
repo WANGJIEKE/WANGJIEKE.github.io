@@ -11,6 +11,7 @@ tags:   study-cs machien-learning
 - [斯坦福机器学习课程笔记（Week 2）]({% post_url 2019-07-05-stanford-ml-wk2 %})
 - [斯坦福机器学习课程笔记（Week 3）]({% post_url 2019-07-13-stanford-ml-wk3 %})
 - **斯坦福机器学习课程笔记（Week 4）**
+- [斯坦福机器学习课程笔记（Week 5）]({% post_url 2019-07-25-stanford-ml-wk5 %})
 
 ## 神经网络（Neural Network）
 
