@@ -473,7 +473,7 @@ $$
 
 我们可以对$$f(A)$$应用我们的矩阵求导，来求得$$\nabla_Af(A)$$，$$\nabla_Af(A)$$同样是一个$$m\times n$$的矩阵。式子$$\text{(1)}$$说明了对于矩阵$$\nabla_Af(A)$$中第$$(i,j)$$项的值，与$$B^T$$中第$$(i,j)$$项中的值相同（换句话说，与$$B$$中第$$(j,i)$$项的值相同）。
 
-译者注：这里通过例子的方式简单解释一下前三个式子是怎么得到的
+译者注：这里通过例子的方式简单解释一下前两个式子是怎么得到的
 
 对于式子$$\text{(1)}$$，假设$$A = \begin{bmatrix} A_{11} &A_{12} &A_{13} \\ A_{21} &A_{22} &A_{23} \end{bmatrix} \in \mathbb{R}^{2\times 3}$$，$$B = \begin{bmatrix} B_{11} &B_{12} \\ B_{21} &B_{22} \\ B_{31} &B_{32} \end{bmatrix} \in \mathbb{R}^{3\times 2}$$，
 
@@ -531,20 +531,7 @@ $$\begin{eqnarray*}
 &=&(\nabla_Af(A))^T
 \end{eqnarray*}$$
 
-对于式子$$\text{(3)}$$，我们可以令$$u(A)=AB$$，$$v(A^T)=A^TC$$，利用链式法则$$(u(x)v(x))'=u'(x)v(x)=u(x)v'(x)$$和$$\nabla_{A^T}f(A)=(\nabla_Af(A))^T$$的性质来做
-
-$$\begin{eqnarray*}
-\nabla_A\mathrm{tr}ABA^TC &=& \nabla_A\mathrm{tr}u(A)v(A^T) \\
-&=& \nabla_{A:u(A)}\mathrm{tr}u(A)v(A^T)+\nabla_{A:v(A^T)}\mathrm{tr}u(A)v(A^T) \\
-&=& (v(A^T))^T\nabla_Au(A)+(\nabla_{A^T:v(A^T)}\mathrm{tr}u(A)v(A^T))^T \\
-&=& C^TAB^T+((u(A))^T\nabla_{A^T}v(A^T))^T \\
-&=& C^TAB^T+(B^TA^TC^T)^T \\
-&=& CAB+C^TAB^T
-\end{eqnarray*}$$
-
-符号$$\nabla_{A:u(A)}$$表示只在$$u(A)$$上计算它关于$$A$$的导数，$$\nabla_{A^T:v(A^T)}$$的含义类似，表示只在$$v(A^T)$$上计算它关于$$A^T$$的导数。注意从$$\nabla_{A:v(A^T)}$$到$$\nabla_{A^T:v(A^T)}$$的转换，这个转换利用了$$\nabla_{A^T}f(A)=(\nabla_Af(A))^T$$这个性质。
-
-*参考资料：[Some Important Properties for Matrix Calculus](https://dawenl.github.io/files/mat_deriv.pdf) by Dawen Liang from Carnegie Mellon University*
+式子$$\text{(3)}$$我本人没有证出来，但是我在网上找到了一份材料，["Some Important Properties for Matrix Calculus"](https://dawenl.github.io/files/mat_deriv.pdf) by Dawen Liang，里面有对式子$$\text{(3)}$$的证明。
 
 ### 寻找Cost Function$$J$$关于$$\mathbf{\theta}$$的偏导数
 
