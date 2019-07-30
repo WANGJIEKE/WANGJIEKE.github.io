@@ -137,7 +137,6 @@ $$\mathbf{\theta}=(X^TX)^{-1}X^T\mathbf{y}$$
 如果$$X^TX$$不可逆，有以下几种可能
 
 - Redundant feature，矩阵$$X$$中存在线性相关的列
-  - 例如第一个feature是额定功率$$P$$，第二个是额定电流$$I$$，假设电压相同$$U$$，那么$$P$$就是$$I$$和$$U$$的线性组合（$$P=UI$$），换句话说，$$W$$和$$I$$是线性相关的
 - 变量太多（$$m\le n$$）
   - 删去一些feature，或者使用regularization
 
