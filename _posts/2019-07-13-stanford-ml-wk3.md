@@ -62,7 +62,7 @@ $$
 此外，因为$$y$$的取值范围为0或1，所以
 
 $$
-P(y=0|x;\theta)+P(y=1\|x;\theta) = 1
+P(y=0|x;\theta)+P(y=1|x;\theta) = 1
 $$
 
 ### 决策边界（Decision Boundary）
