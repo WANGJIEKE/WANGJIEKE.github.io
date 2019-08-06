@@ -19,8 +19,6 @@ tags:   study-cs machien-learning
 - *斯坦福机器学习课程笔记（Week 10）（敬请期待）*
 - *斯坦福机器学习课程笔记（Week 11）（敬请期待）*
 
-斯坦福机器学习课程笔记（Week 7）
-
 ## 支持向量机（Support Vector Machine）
 
 ### 从Logistic回归到支持向量机
