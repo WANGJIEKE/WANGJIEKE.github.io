@@ -147,7 +147,7 @@ blockquote {
  * Code formatting
  */
 
-@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono&display=swap');
 
 pre,
 code {
@@ -155,7 +155,7 @@ code {
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   background-color: #eef;
-  font-family: 'Fira Code', monospace, sans-serif, "Microsoft YaHei";
+  font-family: 'Fira Code', 'Fira Mono', monospace, sans-serif, "Microsoft YaHei";
 }
 
 code {
