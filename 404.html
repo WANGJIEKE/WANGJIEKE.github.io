@@ -3,6 +3,8 @@ layout: default
 ---
 
 <style type="text/css" media="screen">
+  @import url('https://fonts.googleapis.com/css?family=Fira+Code:300,400&display=swap');
+
   .container {
     margin: 10px auto;
     max-width: 600px;
@@ -10,7 +12,6 @@ layout: default
   }
 
   .container img {
-    width: 200px;
     height: 200px;
   }
 
@@ -27,18 +28,27 @@ layout: default
     font-size: 1.2em;
   }
 
-  .container #monospaced-font {
-    font-family: 'Courier New', Courier, monospace;
+  .container>#monospaced-font {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
     font-weight: lighter;
     font-size: 1em;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 15px;
   }
-  
+
+  .container>#monospaced-font>a {
+    color: inherit;
+    text-decoration: none;
+  }
 </style>
 
 <div class="container">
-  <img src="/assets/404-page/chika.jpeg">
+  <img src="/assets/404-page/chika.gif">
   <h1>∑(っ°Д°;)っ</h1>
-  <p id="monospaced-font">404 Not Found</p>
+  <p id="monospaced-font" title="点击前往MDN学习关于HTTP响应代码的知识"><a
+      href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status" target="_blank" rel="noopener noreferrer">404 Not
+      Found</a></p>
   <p>找不到网址对应的网页了</p>
   <p>The requested page could not be found.</p>
 </div>

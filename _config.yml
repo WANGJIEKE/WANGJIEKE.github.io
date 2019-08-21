@@ -17,7 +17,7 @@ title: 我是王杰克的博客
 author: 我是王杰克
 # email: email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  我是练习时长两年半的个人练习生王杰克，喜欢代码、游戏、音乐、纸片人。
+  我是王杰克，喜欢代码、游戏、音乐、纸片人。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: example
