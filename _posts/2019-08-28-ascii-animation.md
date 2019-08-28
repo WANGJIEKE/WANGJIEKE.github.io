@@ -19,7 +19,7 @@ tags:   study-cs python
 
 ### 提取音频
 
-其实从视频中提取音频非常容易，用FFmpeg的话一行命令即可。不过要注意的是，FFmpeg并不是Python中的模组，而是一个著名的可以对多媒体内容进行处理的工具和库。在Python中如果想要使用FFmpeg的话，最简单的办法是使用自带的`subprocess`模组，生成一个新的进程来执行FFmpeg。对应的FFmpeg命令如下
+其实从视频中提取音频非常容易，用[FFmpeg](https://ffmpeg.org)的话一行命令即可。不过要注意的是，FFmpeg并不是Python中的模组，而是一个著名的可以对多媒体内容进行处理的工具和库。在Python中如果想要使用FFmpeg的话，最简单的办法是使用自带的`subprocess`模组，生成一个新的进程来执行FFmpeg。对应的FFmpeg命令如下
 
 ```shell
 ffmpeg -i "input_video.mp4" -map a:0 "output_audio.wav"
