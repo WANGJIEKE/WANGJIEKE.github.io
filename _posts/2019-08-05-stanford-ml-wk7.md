@@ -16,8 +16,8 @@ tags:   study-cs machien-learning
 - **斯坦福机器学习课程笔记（Week 7）**
 - [斯坦福机器学习课程笔记（Week 8）]({% post_url 2019-08-12-stanford-ml-wk8 %})
 - [斯坦福机器学习课程笔记（Week 9）]({% post_url 2019-08-20-stanford-ml-wk9 %})
-- *斯坦福机器学习课程笔记（Week 10）（敬请期待）*
-- *斯坦福机器学习课程笔记（Week 11）（敬请期待）*
+- [斯坦福机器学习课程笔记（Week 10）]({% post_url 2019-08-29-stanford-ml-wk10 %})
+- [斯坦福机器学习课程笔记（Week 11）]({% post_url 2019-08-29-stanford-ml-wk11 %})
 
 ## 支持向量机（Support Vector Machine）
 
