@@ -73,4 +73,4 @@ make TOOLPREFIX="i386-elf-" qemu-nox
 
 ### 退出 QEMU
 
-按下 `^A+x` 组合键即可退出。
+按下 `^A+X` 组合键即可退出。
