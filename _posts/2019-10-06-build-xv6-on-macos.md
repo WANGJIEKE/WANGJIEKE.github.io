@@ -7,7 +7,7 @@ tags:   study-cs operating-system
 
 ## *2019-12-18 更新*
 
-貌似 Homebrew 的 i386-elf-binutils 和 i386-elf-gcc 出了点问题，编译出来的系统会导致 QEMU 卡在启动环节。
+貌似 Homebrew 的 i386-elf-binutils 和 i386-elf-gcc 出了点问题，编译出来的 xv6 系统会导致 QEMU 卡在启动环节。
 
 ## 前言
 
@@ -43,36 +43,10 @@ brew install qemu
 
 ## 编译 xv6
 
-首先，下载 xv6 的源代码并进入源代码所在的目录
+下载 xv6 的源代码并进入源代码所在的目录，然后使用 `make` 命令进行编译。
 
 ```bash
-git clone https://github.com/mit-pdos/xv6-public.git && cd xv6-public
-```
-
-打开 `Makefile`
-
-```bash
-open Makefile  # 使用你系统中默认的文本编辑器打开 Makefile 文件
-```
-
-找到下面代码块中展示的这两行（应该是第 31 行和 32 行）
-
-```makefile
-# Cross-compiling (e.g., on Mac OS X)
-# TOOLPREFIX = i386-jos-elf
-```
-
-改为
-
-```makefile
-# Cross-compiling (e.g., on Mac OS X)
-TOOLPREFIX = i386-elf-
-```
-
-保存并退出文本编辑器，回到终端，输入
-
-```bash
-make
+git clone https://github.com/mit-pdos/xv6-public.git && cd xv6-public && make TOOLPREFIX="i386-elf-"
 ```
 
 如果没有报错，则 xv6 编译完成。
@@ -82,12 +56,20 @@ make
 在 xv6 的根目录下运行
 
 ```bash
-make qemu
+make TOOLPREFIX="i386-elf-" qemu
 ```
 
 出现下图所示窗口时代表 xv6 已经成功在 QEMU 中运行了。
 
 ![image-20191006132110088](/assets/2019-10-06-build-xv6-on-macos/image-20191006132110088.png)
+
+如果不想启用 VGA 输出，则可以使用
+
+```bash
+make TOOLPREFIX="i386-elf-" qemu-nox
+```
+
+来启动 xv6。
 
 ### 终止 xv6 并退出 QEMU
 
