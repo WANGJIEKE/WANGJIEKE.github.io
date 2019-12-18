@@ -5,6 +5,10 @@ date:   2019-10-06 13:27:00 -0700
 tags:   study-cs operating-system
 ---
 
+## *2019-12-18 更新*
+
+貌似 Homebrew 的 i386-elf-binutils 和 i386-elf-gcc 出了点问题，编译出来的系统会导致 QEMU 卡在启动环节。
+
 ## 前言
 
 xv6 是用 C 语言实现的 Unix Version 6 教学用操作系统，由 MIT 的教职工维护。
