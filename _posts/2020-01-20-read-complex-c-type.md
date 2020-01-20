@@ -52,7 +52,7 @@ int *(*(**j[2][2])(char))[];
 
 运用规则 1，继续往右侧走。运用规则 2，得到翻译“`_` is a function returning ...”。代入前面的结果，得“`i` is *an array (length is 2) of pointer to* a function returning ...”。剩余的类型声明为 `int *_`。
 
-根据规则 1 往左走，根据规则 2 得到翻译“`_` is a pointer to `int`”。代入前面的结果，得到“`int` is *an array (length is 2) of pointer to a function returning* a pointer to `int`”。
+根据规则 1 往左走，根据规则 2 得到翻译“`_` is a pointer to `int`”。代入前面的结果，得到“`i` is *an array (length is 2) of pointer to a function returning* a pointer to `int`”。
 
 至此，我们就得到了变量 `i` 的类型。
 
