@@ -28,18 +28,67 @@ layout: default
     font-size: 1.1em;
   }
 
-  .container>#monospaced-font {
+  #mdn404-wrapper {
+    margin-bottom: 12px;
+    position: relative;
+  }
+
+  #mdn404-wrapper>#mdn404 {
     font-family: 'Fira Code', 'Courier New', Courier, monospace;
     font-weight: lighter;
     font-size: 1em;
-    width: fit-content;
     margin: 0 auto;
-    margin-bottom: 12px;
+    display: inline;
   }
 
-  .container>#monospaced-font>a {
+  #mdn404-wrapper>#mdn404>a {
     color: inherit;
     text-decoration: none;
+  }
+
+  #mdn404-wrapper>#mdn404:hover + #mdn404-popup {
+    display: inline-block;
+  }
+
+  #mdn404-wrapper>#mdn404-popup {
+    position: absolute;
+    display: none;
+    margin: 0;
+    margin-left: 6px;
+    padding: 3px 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 800px) {
+    #mdn404-wrapper>#mdn404-popup {
+      display: none;
+    }
+
+    #mdn404-wrapper>#mdn404:hover + #mdn404-popup {
+      display: none;
+    }
+
+    #mdn404-wrapper>#mdn404 {
+      font-family: 'Fira Code', 'Courier New', Courier, monospace;
+      font-weight: lighter;
+      font-size: 1em;
+      margin: 0 auto;
+      display: block;
+    }
+
+    #mdn404-wrapper>#mdn404>a {
+      text-decoration: underline;
+    }
+
+    #mdn404-wrapper {
+      margin-bottom: 12px;
+      position: static;
+    }
   }
 
   .container>.new-issue>p {
@@ -51,9 +100,16 @@ layout: default
 <div class="container">
   <img src="/assets/404-page/chika.gif">
   <h1>∑(っ°Д°;)っ</h1>
-  <p id="monospaced-font" title="点击前往MDN学习关于HTTP响应代码的知识"><a
-      href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status" target="_blank" rel="noopener noreferrer">404 Not
-      Found</a></p>
+  <div id="mdn404-wrapper">
+    <p id="mdn404">
+      <a
+        href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status"
+        target="_blank"
+        rel="noopener noreferrer"
+      >404 Not Found</a>
+    </p>
+    <p id="mdn404-popup">前往 MDN 学习 HTTP 响应代码</p>
+  </div>
   <p>找不到网址对应的网页了</p>
   <p>The requested page could not be found.</p>
 
